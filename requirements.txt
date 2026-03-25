@@ -1,0 +1,5 @@
+mcp
+duckdb
+psycopg2-binary
+pytest
+pytest-asyncio

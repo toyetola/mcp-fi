@@ -1,0 +1,46 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# config.json contains credentials (DSN, paths)
+# each developer has their own local config
+config.json
+
+# Data files — users bring their own
+data/*.sqlite
+data/*.csv
+data/*.db
+
+# Keep the data directory but not its contents
+!data/.gitkeep
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+
+# Logs
+*.log
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
