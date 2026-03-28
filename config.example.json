@@ -1,0 +1,24 @@
+{
+  "sources": {
+    "my_sqlite_db": {
+      "type": "sqlite",
+      "path": "/absolute/path/to/data/mydb.sqlite"
+    },
+    "my_csv_data": {
+      "type": "csv",
+      "data_dir": "/absolute/path/to/data/"
+    },
+    "my_postgres": {
+      "type": "postgres",
+      "dsn": "postgresql://user:password@localhost/dbname"
+    },
+    "my_mysql": {
+      "type": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "database": "mydb",
+      "user": "root",
+      "password": "yourpassword"
+    }
+  }
+}

@@ -3,3 +3,4 @@ duckdb
 psycopg2-binary
 pytest
 pytest-asyncio
+mysql-connector-python

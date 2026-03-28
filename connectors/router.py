@@ -1,6 +1,7 @@
 from .sqlite_connector import SQLiteConnector
 from .csv_connector import CSVConnector
 from .postgres_connector import PostgresConnector
+from .mysql_connector import MySQLConnector
 import json
 import os
 
@@ -18,6 +19,14 @@ def get_connector(source_name: str, config_path=_DEFAULT_CONFIG):
         c = CSVConnector(source["data_dir"])
     elif source["type"] == "postgres":
         c = PostgresConnector(source["dsn"])
+    elif source["type"] == "mysql":
+        c = MySQLConnector(
+            host=source["host"],
+            port=source.get("port", 3306),
+            database=source["database"],
+            user=source["user"],
+            password=source["password"]
+        )    
     else:
         raise ValueError(f"Unknown source type: {source['type']}")
 
