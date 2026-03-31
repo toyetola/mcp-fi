@@ -295,4 +295,4 @@ That's it. No code changes needed.
 
 ## License
 
-MIT
+...
